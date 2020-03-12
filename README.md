@@ -37,6 +37,6 @@
 
 # Video editing
 - Download [Shotcut](https://shotcut.org/)
-- I have not any specific recommandation here (feel free to update the readme)
+- I have no specific recommendations here (feel free to update the readme)
 
 > Shotcut is a free, open source, cross-platform video editor.
