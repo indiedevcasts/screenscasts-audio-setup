@@ -8,8 +8,7 @@
 > <a href="https://www.indiedevcasts.com" target="_blank">Indiedevcasts</a> is a All-in-One gamedev platform. It's kinda like your online library related to video games stuff! Subscribe now to get a free premium month!
 
 # Screencast setup (audio + video)
-## Setup
-### ShareX
+## ShareX
 - Download [ShareX](https://getsharex.com/).
 - Install ffmpeg from ShareX
 - Install "screen-capture-recorder" and "virtual-audio-capture" from `Task Settings > Screen Recorder > Screen Recording options`
@@ -23,7 +22,7 @@
 ```
 -y -f dshow -i audio="Microphone (RODE NT-USB)" -f dshow -i audio="virtual-audio-capturer" -f gdigrab -framerate 30 -video_size 1920x1080 -draw_mouse 1 -i desktop -filter_complex "[0:a][1:a]amerge=inputs=2[a]" -map 2 -map "[a]" "$output$"
 ```
-### Use a specific user session
+## Use a specific user session
 - Use a specific user session for your screenscasts (no personal information, a personalized wallpaper, ...)
 - Hide your desktop icons
 - Hide your taskbar
