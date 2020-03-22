@@ -10,8 +10,9 @@
 # Screencast setup (audio + video)
 ## ShareX
 - Download [ShareX](https://getsharex.com/).
+- Go to `Task Settings > Screen Recorder > Screen Recording options`
 - Install ffmpeg from ShareX
-- Install "screen-capture-recorder" and "virtual-audio-capture" from `Task Settings > Screen Recorder > Screen Recording options`
+- Install "screen-capture-recorder" and "virtual-audio-capture"
 - Choose GDI Grab for the video
 - Then get the name of your microphone by using the ffmpeg program previously installed :
 ```powershell
