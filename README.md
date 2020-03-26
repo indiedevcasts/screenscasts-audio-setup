@@ -21,7 +21,7 @@
 - Last step : update the ffmpeg command to configure your resolution, your microphone, your channels, and the mapping of the video and the audio channels. Here an example of my configuration with a RODE microphone :
 
 ```
--y -f dshow -i audio="Microphone (RODE NT-USB)" -f dshow -i audio="virtual-audio-capturer" -f gdigrab -framerate 30 -video_size 1920x1080 -draw_mouse 1 -i desktop -filter_complex "[0:a][1:a]amerge=inputs=2[a]" -map 2 -map "[a]" "$output$"
+-y -f dshow -i audio="Microphone (RODE NT-USB)" -f dshow -i audio="virtual-audio-capturer" -f gdigrab -framerate 60 -video_size 1920x1080 -draw_mouse 1 -i desktop -filter_complex "[0:a][1:a]amerge=inputs=2[a]" -map 2 -map "[a]" -vcodec libx264 -crf 0 -preset ultrafast "$output$"
 ```
 ## Use a specific user session
 - Use a specific user session for your screenscasts (no personal information, a personalized wallpaper, ...)
